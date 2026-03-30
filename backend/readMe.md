@@ -1,8 +1,10 @@
 Tasks
 
 Run code (unofficial)
-cd backend
-run prepare_data.py
+1. cd backend
+2. run prepare_data.py
+3. run train_model.py
+4. run live_detector.py
 
 Completed
 
@@ -11,13 +13,3 @@ Completed
 - Live detector can detect motion and no motion
 - Live detector can detect 2 hands simultaneously
 
-[Video Frame] ---> [feature_extractor.extract_frame_features]
-|
-v
-[frame feature vector: 270]
-|
-[prepare_data.py] Collects these for each frame → makes sequences
-|
-v
-[X.npy shape = (#videos, 30, 270)]
-[y.npy shape = (#videos, #classes)]
